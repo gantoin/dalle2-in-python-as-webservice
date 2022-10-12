@@ -9,7 +9,8 @@ import urllib.request
 
 from pathlib import Path
 
-class Dalle2():
+
+class Dalle2:
     def __init__(self, bearer):
         self.bearer = bearer
         self.batch_size = 4
@@ -50,7 +51,7 @@ class Dalle2():
                 "caption": prompt,
                 "batch_size": self.inpainting_batch_size,
                 "image": image_base64.decode(),
-                "masked_image": image_base64.decode(), # identical since already masked
+                "masked_image": image_base64.decode(),  # identical since already masked
             }
         }
 
