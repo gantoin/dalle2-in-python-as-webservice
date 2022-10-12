@@ -220,3 +220,5 @@ parts
 src/*.egg-info
 lib
 lib64
+/api-key
+/.idea/

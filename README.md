@@ -20,6 +20,10 @@ from dalle2 import Dalle2
 dalle = Dalle2("sess-xxxxxxxxxxxxxxxxxxxxxxxxxxxx") # your bearer key
 ```
 
+Run the webapp & call the generate function with a prompt
+```shell
+curl -X POST -H "Content-type: application/json" -d "{\"prompt\" : \"Sad Vladimir Putin painted by Vincent van Gogh\"}" "localhost:5000/generate"
+```
 ## Generate images
 ```python
 generations = dalle.generate("portal to another dimension, digital art")
